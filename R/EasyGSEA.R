@@ -42,8 +42,7 @@ EasyGSEA <- function(normdata,metadata,directory,feature,lab.1,lab.2,ID,gene_set
   phenotypes_list <- phenotypes_list[order(phenotypes_list[[feature]]),]
   phenotypes_list <- phenotypes_list[phenotypes_list[[feature]]==lab.1|phenotypes_list[[feature]]==lab.2,]
   
-  normdata <- normdata[,c('NAME','DESCRIPTION',phenotypes_list[,'Sample_ID'])]
-  print(normdata)
+  normdata <- normdata[,c('NAME','DESCRIPTION',phenotypes_list[['Sample_ID']])]
   
   phens <- paste(phenotypes_list$phenotype[1])
   for (i in 2:length(phenotypes_list$phenotype)) {
