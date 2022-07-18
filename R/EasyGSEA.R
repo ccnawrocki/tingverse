@@ -32,7 +32,7 @@ EasyGSEA <- function(normdata,metadata,directory,feature,lab.1,lab.2,ID,gene_set
   subsetted_meta <- metadata[,c(ID_col,feature_col)]
   colnames(subsetted_meta) <- c('Sample_ID',feature)
   
-  phenotypes_list <- data.frame('Sample_ID'=colnames(normdata[,3:length(normdata)])) %>% 
+  phenotypes_list <- data.frame('Sample_ID'=colnames(normdata[,3:ncol(normdata)])) %>% 
     inner_join(subsetted_meta, by='Sample_ID')
   phenotypes_list$phenotype <- 0
   for (group in unique(phenotypes_list[,feature])) {
