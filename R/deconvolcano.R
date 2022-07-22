@@ -33,7 +33,7 @@ deconvolcano <- function(normdata,metadata,feature,lab.1,lab.2,ID,n_cell_proxy,n
   colnames(metadata) <- c('Sample_ID',n_cell_proxy,feature)
   
   immune_props <- as.data.frame(dec$prop_of_all) %>% t() %>% 
-    cbind( 'Sample_ID' = rownames(immune_props)) %>% as.data.frame()
+    cbind( 'Sample_ID' = colnames(dec$prop_of_all)) %>% as.data.frame()
   
   metadata <- inner_join(metadata,immune_props,by='Sample_ID')
   
