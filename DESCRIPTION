@@ -6,7 +6,7 @@ Author: Cole Nawrocki [aut, cre],
 	Michael Raabe [aut],
 Maintainer: Cole Nawrocki <ccnawrocki@partners.org>
 Depends: R (>= 4.1.2), nlme
-Description: This version includes three functions, EasyGSEA(), which is intended to be an easy alternative to the original GSEA function, get_diffexp(), volcano(), and deconvolcano().
+Description: This version includes four functions, EasyGSEA(), which is intended to be an easy alternative to the original GSEA function, get_diffexp(), volcano(), and deconvolcano().
 License: None
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
