@@ -1,0 +1,20 @@
+Package: tingverse
+Title: Functions for Bioinformatics in the Ting Lab at the MGH Center for Cancer Research
+Version: 2.0
+Authors@R: c(person("Cole", "Nawrocki", "ccnawrocki@mgb.org", role = c("aut", "cre"),comment = c(ORCID = "0000-0001-7776-2095")), person("Michael", "Raabe", "mraabe@mgh.harvard.edu", role = c("aut")))
+Author: Cole Nawrocki [aut, cre],
+	Michael Raabe [aut],
+Maintainer: Cole Nawrocki <ccnawrocki@partners.org>
+Depends: R (>= 4.3.0), nlme
+Description: This version includes three functions, diff.exp, easy.gsea, and volcano.plot.
+License: None
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+	clusterProfiler,
+	tidyverse,
+	ggrepel,
+	parallel,
+	org.Hs.eg.db,
+	org.Mm.eg.db
