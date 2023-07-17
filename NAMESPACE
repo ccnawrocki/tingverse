@@ -3,4 +3,4 @@
 export(differential.expression)
 export(easy.gsea)
 export(volcano.plot)
-import(BiocManager, clusterProfiler, tidyverse, ggrepel, parallel)
+import(BiocManager, tidyverse, ggrepel, parallel)
