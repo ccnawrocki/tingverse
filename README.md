@@ -16,12 +16,14 @@ devtools::install_github('ccnawrocki/tingverse')
 library(tingverse)
 ```
 
-The GSEA functionality of the tingverse depends on certain gene set databases available for download through Bioconductor. These two databases are about 80 MB each, which is not trivial. Thus, if you do not plan to use the GSEA functionality of the tingverse, then do not download these databases. Otherwise, you can download these databases as follows: 
+The GSEA functionality of the tingverse is a wrapper for clusterProfiler functions that depend on certain gene set databases available for download through Bioconductor. These two databases are about 80 MB each, which is not trivial. Thus, if you do not plan to use the GSEA functionality of the tingverse, then do not download these databases. Otherwise, you can download these databases as follows: 
 
 ```
+BiocManager::install("clusterProfiler")
 BiocManager::install("org.Hs.eg.db")
 BiocManager::install("org.Mm.eg.db")
+library(clusterProfiler)
 library(org.Hs.eg.db)
 library(org.Mm.eg.db
 ```
-Once you have downloaded these databases, you will have access to the tingverse's full capabilities.
+Once you have downloaded the clusterProfiler package and these databases, you will have access to the tingverse's full capabilities.
