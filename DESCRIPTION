@@ -16,6 +16,4 @@ Imports:
 	clusterProfiler,
 	tidyverse,
 	ggrepel,
-	parallel,
-	org.Hs.eg.db,
-	org.Mm.eg.db
+	parallel
